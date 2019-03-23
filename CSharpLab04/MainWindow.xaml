@@ -1,0 +1,32 @@
+﻿<Window x:Class="CSharpLab04.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CSharpLab04"
+        mc:Ignorable="d"
+        Title="Base" Height="500" Width="1000">
+    <Window.Resources>
+        <Style TargetType="Label">
+            <Setter Property="Height" Value="30"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+        </Style>
+        <Style TargetType="TextBox">
+            <Setter Property="Height" Value="22"/>
+            <Setter Property="Width" Value="120"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+        </Style>
+        <Style TargetType="Button">
+            <Setter Property="Height" Value="22"/>
+            <Setter Property="Width" Value="60"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+        </Style>
+    </Window.Resources>
+
+    <Grid Name="GridMainWindow">
+        <Grid.Background>
+            <ImageBrush ImageSource="https://storge.pic2.me/c/1360x800/792/5adc5af62de5e.jpg"></ImageBrush>
+        </Grid.Background>
+        <local:PersonView></local:PersonView>
+    </Grid>
+</Window>
